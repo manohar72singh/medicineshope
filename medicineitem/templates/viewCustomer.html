@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Customer</title>
+</head>
+<body>
+<h1>All Customers</h1>
+<table width="100%; text-align:center; border-style:solid;" border="solid">
+    <tr><th>cus.Id</th><th>Name</th><th>Email</th><th>Mob.No</th><th>Gender</th><th>Addr</th></tr>
+    {% for c in customers %}
+    <tr><td>{{ c.id}}</td><td>{{ c.cus_Name}}</td><td>{{ c.cus_Email}}</td><td>{{ c.cus_Mob}}</td><td>{{ c.cus_Gen}}</td><td>{{ c.cus_Adds}}</td></tr>
+    {% endfor %}
+</table>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Add New Customer</title>
+</head>
+<body>
+<center><h1>Add New Customer</h1></center>
+<p>{{ msg }}</p>
+
+<form action="" method="post">
+    {% csrf_token %}
+    <table>
+        <!--<tr><td><label>Customer Name</label></td><td><input type="text" name="cn" required /></td></tr>
+        <tr><td><label>E-mail</label></td><td><input type="email" name="em" required /></td></tr>
+        <tr><td><label>mobile no</label></td><td><input type="number" name="mob" required /></td></tr>
+        <tr><td><label>Gender</label></td><td><input type="text" name="gen" required /></td></tr>
+        <tr><td><label>Address</label></td><td><input type="text" name="addr" required /></td></tr>-->
+        {{ form }}
+        <tr><td colspan="2"><input type="submit"></td></tr>
+    </table>
+</form>
+
+</body>
+</html>
